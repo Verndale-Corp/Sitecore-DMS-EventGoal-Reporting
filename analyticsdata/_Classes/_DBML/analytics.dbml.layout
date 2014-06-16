@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 13.125" name="analytics">
+  <DataContextMoniker Name="/analyticsDataContext" />
+  <nestedChildShapes>
+    <classShape Id="9e10da70-4611-49c8-811e-ac2196afc5e5" absoluteBounds="0.5, 0.5, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/analyticsDataContext/PageEventDefinition" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b82f0f13-9de2-4cd4-bc03-f1e7d50ddc15" absoluteBounds="0.51500000000000012, 0.96, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a7868915-f287-494f-bd53-1406f6bda385" absoluteBounds="3.625, 0.625, 2, 3.8862125651041666">
+      <DataClassMoniker Name="/analyticsDataContext/PageEvent" />
+      <nestedChildShapes>
+        <elementListCompartment Id="688f435a-366a-4fef-90a5-fd680817a180" absoluteBounds="3.6399999999999997, 1.085, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.5 : 2.21715413411458); (3.625 : 2.21715413411458)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/analyticsDataContext/PageEventDefinition/PageEventDefinition_PageEvent" />
+      <nodes>
+        <classShapeMoniker Id="9e10da70-4611-49c8-811e-ac2196afc5e5" />
+        <classShapeMoniker Id="a7868915-f287-494f-bd53-1406f6bda385" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="37263bb6-70c6-42f6-9e7c-11c6643e6581" absoluteBounds="6.5, 0.625, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/analyticsDataContext/Visitor" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5501d0aa-13a7-46be-ba22-f1a82070265f" absoluteBounds="6.515, 1.085, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.5 : 1.99120198567708); (5.625 : 1.99120198567708)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/analyticsDataContext/Visitor/Visitor_PageEvent" />
+      <nodes>
+        <classShapeMoniker Id="37263bb6-70c6-42f6-9e7c-11c6643e6581" />
+        <classShapeMoniker Id="a7868915-f287-494f-bd53-1406f6bda385" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="5bb025a3-89f7-431c-aebc-525285e49c4e" absoluteBounds="3.75, 4.75, 2, 8.1168440755208326">
+      <DataClassMoniker Name="/analyticsDataContext/Visit" />
+      <nestedChildShapes>
+        <elementListCompartment Id="76bf549b-1a60-4c23-a6fc-f04ac01cba98" absoluteBounds="3.7649999999999997, 5.21, 1.9700000000000002, 7.556844075520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.6875 : 4.75); (4.6875 : 4.51121256510417)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/analyticsDataContext/Visit/Visit_PageEvent" />
+      <nodes>
+        <classShapeMoniker Id="5bb025a3-89f7-431c-aebc-525285e49c4e" />
+        <classShapeMoniker Id="a7868915-f287-494f-bd53-1406f6bda385" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.5 : 3.35740397135417); (7.5 : 8.80842203776042); (5.75 : 8.80842203776042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/analyticsDataContext/Visitor/Visitor_Visit" />
+      <nodes>
+        <classShapeMoniker Id="37263bb6-70c6-42f6-9e7c-11c6643e6581" />
+        <classShapeMoniker Id="5bb025a3-89f7-431c-aebc-525285e49c4e" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="0f4ae6e8-d45c-4016-91fc-fa3629c6ff4a" absoluteBounds="0.5, 4, 2, 4.0785139973958326">
+      <DataClassMoniker Name="/analyticsDataContext/Page" />
+      <nestedChildShapes>
+        <elementListCompartment Id="819036a7-bf4a-4b00-b706-da0e2969c4b9" absoluteBounds="0.51500000000000012, 4.46, 1.9700000000000002, 3.518513997395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.5 : 4.25560628255208); (3.625 : 4.25560628255208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/analyticsDataContext/Page/Page_PageEvent" />
+      <nodes>
+        <classShapeMoniker Id="0f4ae6e8-d45c-4016-91fc-fa3629c6ff4a" />
+        <classShapeMoniker Id="a7868915-f287-494f-bd53-1406f6bda385" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.9687475 : 3.35740397135417); (6.9687475 : 4.63060628255208); (2.5 : 4.63060628255208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/analyticsDataContext/Visitor/Visitor_Page" />
+      <nodes>
+        <classShapeMoniker Id="37263bb6-70c6-42f6-9e7c-11c6643e6581" />
+        <classShapeMoniker Id="0f4ae6e8-d45c-4016-91fc-fa3629c6ff4a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.75 : 6.41425699869792); (2.5 : 6.41425699869792)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/analyticsDataContext/Visit/Visit_Page" />
+      <nodes>
+        <classShapeMoniker Id="5bb025a3-89f7-431c-aebc-525285e49c4e" />
+        <classShapeMoniker Id="0f4ae6e8-d45c-4016-91fc-fa3629c6ff4a" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
